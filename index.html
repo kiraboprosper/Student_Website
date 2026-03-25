@@ -30,6 +30,7 @@
             <li><a href="#gallery" class="nav-link">Gallery</a></li>
             <li><a href="#staff" class="nav-link">Staff</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#admission form" class="nav-link">Admission</a></li>
         </ul>
         <button class="btn btn-light ms-3" onclick="toggleDarkMode()">🌙</button>
     </div>
@@ -139,6 +140,35 @@
 <button class="btn btn-primary w-100">Send</button>
 </form>
 
+</div>
+</section>
+<section id="admission form" class="section fade-in">
+<div class="form-container text-center">
+<h2>Admission Form</h2>
+<p>Fill out the form below to apply for admission.</p>
+<form class="col-md-6 mx-auto" onsubmit="validateAdmissionForm(event)">
+    <div class="input-box">
+        <input type="text" id="admission-name" placeholder="Name">
+        <span>Name</span>
+    </div>
+    <div class="input-box">
+        <input type="email" id="admission-email" placeholder="Email">
+        <span>Email</span>
+    </div>
+    <div class="input-box">
+        <input type="text" id="admission-phone" placeholder="Phone">
+        <span>Phone</span>
+    </div>
+    <div class="container radio">
+        <label>
+            <input type="radio" name="gender" value="male"> Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female"> Female
+        </label>
+    </div>
+    <button class="submit-btn">Submit</button>
+</form>
 </div>
 </section>
 
